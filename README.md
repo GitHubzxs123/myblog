@@ -2,6 +2,7 @@
 <p>个人博客</p>
 
 <h2>目录详解:</h2>
+<div>back 博客后台管理</div>
 <div>blog 博客前端展示</div><br>
 <div>--build 打包生成的文件</div>
 <div>--src 前端业务逻辑</div>
@@ -12,4 +13,3 @@
 <div>----mixin 公共逻辑</div>
 <div>----app.vue 前端模版文件</div>
 <div>----main.js 入口文件</div><br>
-<div>back 博客后台管理</div>
