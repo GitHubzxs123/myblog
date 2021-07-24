@@ -29,7 +29,6 @@ export default {
     created() {
         const title = this.$route.params.id;
         this.$http.get('http://localhost/getArticleDetail/'+title).then((res)=> {
-            // console.log(res);
             this.articleList = res.data;
         }).catch((err)=> {
             console.log(err);

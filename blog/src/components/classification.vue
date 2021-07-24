@@ -47,6 +47,8 @@ export default {
 
 <style scoped>
 .classContainer {
+  width: 100%;
+  height: 100vh;
   position: relative;
 }
 .top {
@@ -97,7 +99,7 @@ export default {
 }
 .footerMargin {
   position: absolute;
-  bottom: -373px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 }

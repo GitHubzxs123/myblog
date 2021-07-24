@@ -6,8 +6,7 @@ import Tag from '../components/tag.vue'
 import TimeLine from '../components/timeLine.vue'
 import Article from '../components/article.vue'
 import About from '../components/about.vue'
-import Login from '../components/login.vue'
-import PageManager from '../components/pageManager.vue'
+import Search from '../components/search.vue'
 
 Vue.use(Router)
 
@@ -48,14 +47,9 @@ export default new Router({
             component: Article
         },
         {
-            path: '/login',
-            name: 'login',
-            component: Login
-        },
-        {
-            path: '/pageManager',
-            name: 'pageManager',
-            component: PageManager
+            path: '/search',
+            name: 'search',
+            component: Search
         }
     ]
 })

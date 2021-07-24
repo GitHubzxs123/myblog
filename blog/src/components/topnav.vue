@@ -13,9 +13,7 @@
                 </li>
             </ul>
         </div>
-        <div class="searchMask" v-if="searchShow"></div>
-        <div class="searchBtn" v-if="searchShow"><span class="iconfont iconSearch icon-sousuo"></span><input class="searchInput" type="text" placeholder="Search..."></div>
-        <div class="closeSearchMask" v-if="searchShow" @click="closeSearchMask"><span class="iconfont icon-guanbi"></span></div>
+        
     </div>
 </template>
 
@@ -24,7 +22,6 @@ export default {
     data() {
         return {
             rightNavMaskShow: false,
-            searchShow: false,
             delIndex: 0,
             list: [{
                 name: '首页',
@@ -57,10 +54,7 @@ export default {
             this.rightNavMaskShow = false;
         },
         search() {
-            this.searchShow = true;
-        },
-        closeSearchMask() {
-            this.searchShow = false;
+            this.$router.push('/search');
         }
     }
 }
@@ -145,45 +139,6 @@ export default {
     cursor: pointer;
 }
 .closeRightNavMask .icon-guanbi {
-    font-size: 18px;
-    color: #000;
-}
-.searchMask {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(255,255,255,0.7);
-    -webkit-backdrop-filter: saturate(50%) blur(10px);
-    backdrop-filter: saturate(180%) blur(10px);
-}
-.searchBtn {
-    padding: 20px 0;
-    position: absolute;
-    top: 15%;
-    left: 29%;
-}
-.iconSearch {
-    margin-right: 10px;
-    font-size: 23px;
-    vertical-align: top;
-}
-.searchInput {
-    outline: none;
-    border: none;
-    background: transparent;
-    width: 500px;
-    height: 30px;
-    font-size: 18px;
-    color: rgb(50, 50, 54);
-}
-.closeSearchMask {
-    position: absolute;
-    top: 12px;
-    right: 15px;
-}
-.closeSearchMask .icon-guanbi {
     font-size: 18px;
     color: #000;
 }

@@ -17,6 +17,7 @@ const auth = async (req, res, next)=> {
     next();
   } else {
     const token = String(req.headers.authorization).split(' ')[1];
+    console.log(token);
     if(token) {
       try {
         const userId = jwt.verify(token, SECRET).id;

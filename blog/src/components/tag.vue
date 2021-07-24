@@ -44,6 +44,8 @@ export default {
 
 <style scoped>
 .tagContainer {
+  width: 100%;
+  height: 100vh;
   position: relative;
 }
 .top {
@@ -72,13 +74,14 @@ export default {
   display: inline-block;
   margin: 0 4px;
   background: #f7f9fb;
+  font-size: 14px;
   color: #33333b;
-  padding: 7px;
+  padding: 7px 10px;
   cursor: pointer;
 }
 .footerMargin {
   position: absolute;
-  bottom: -297px;
+  bottom: 30px;
   left: 50%;
   transform: translateX(-50%);
 }
