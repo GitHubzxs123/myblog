@@ -3,7 +3,7 @@
 
 <h2>目录详解:</h2>
 <div>back 博客后台管理</div>
-<div>blog 博客前端展示</div><br>
+<div>blog 博客前端页面</div><br>
 <div>--build 打包生成的文件</div>
 <div>--src 前端业务逻辑</div>
 <div>----assets 图片、fonts等静态资源</div>
